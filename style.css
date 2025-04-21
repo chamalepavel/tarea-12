@@ -1,0 +1,198 @@
+
+ {
+  font-family: 'Nunito Sans';
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 3px;
+  background-color: #fff;
+}
+
+.contenedor-juego {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.info-ronda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info-ronda p {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.bloque {
+  min-width: 303px;
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 19px;
+}
+
+.zona-adivinanza {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.titulo-bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.titulo-bloque p {
+  margin: 0;
+}
+
+.titulo-bloque p:first-child {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.titulo-bloque p:last-child {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.zona-objetivo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.computadora {
+  background-color: #ececec;
+}
+
+#intento-pc {
+  font-size: 50px;
+  font-weight: 700;
+  color: #a5a5a5;
+}
+
+.jugador {
+  border: 1px solid #979797;
+}
+
+.bloque input {
+  height: 90px;
+  width: 90px;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 7px;
+}
+
+.controles-numero {
+  font-size: 0;
+  margin-bottom: 23px;
+}
+
+.boton-numero {
+  border: solid 1px #4c7ef3;
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #4c7ef3;
+  cursor: pointer;
+}
+
+.controles-numero button[disabled] {
+  color: #dfdfdf;
+  cursor: default;
+}
+
+.izq {
+  border-top-left-radius: 22.5px;
+  border-bottom-left-radius: 22.5px;
+}
+
+.der {
+  border-top-right-radius: 22.5px;
+  border-bottom-right-radius: 22.5px;
+  border-left-width: 0px;
+}
+
+.zona-botones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.boton {
+  background-color: #4c7ef3;
+  color: #fff;
+  cursor: pointer;
+}
+
+#boton-adivinar {
+  padding: 20px;
+  width: 169px;
+  height: 59px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#boton-siguiente {
+  width: 179px;
+  height: 64px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.boton[disabled] {
+  background-color: #d2d2d2;
+  color: #a0a0a0;
+  cursor: default;
+}
+
+.instrucciones {
+  background-color: #ececec;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.instrucciones article {
+  width: 180px;
+  padding: 2px;
+  text-align: center;
+}
+
+.instrucciones h3 {
+  font-size: 14px;
+}
+
+.texto-ganador,
+.texto-ganador[disabled] {
+  color: #ec3636;
+  font-weight: 700;
+}
