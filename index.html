@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Number Match</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main class="contenedor-juego">
+      <header>
+        <h1>Number Match!</h1>
+      </header>
+
+      <section class="info-ronda">
+        <p>Ronda actual: <span id="contador-ronda">1</span></p>
+        <p>Número objetivo: <span id="numero-objetivo">?</span></p>
+      </section>
+
+      <section class="zona-adivinanza">
+        <div class="bloque computadora">
+          <div class="titulo-bloque">
+            <p>Computadora</p>
+            <p>Puntaje: <span id="puntaje-pc">0</span></p>
+          </div>
+          <p id="intento-pc">?</p>
+          <p id="mensaje-pc" class="texto-ganador"></p>
+        </div>
+
+        <div class="bloque jugador">
+          <div class="titulo-bloque">
+            <p>Tú</p>
+            <p>Puntaje: <span id="puntaje-jugador">0</span></p>
+          </div>
+          <input type="number" id="entrada-jugador" min="0" max="9" value="0" />
+          <div class="controles-numero">
+            <button id="restar" class="boton-numero izq" disabled>-</button>
+            <button id="sumar" class="boton-numero der">+</button>
+          </div>
+          <button id="boton-adivinar" class="boton">¡Adivinar!</button>
+        </div>
+      </section>
+
+      <section class="zona-siguiente">
+        <button id="boton-siguiente" class="boton" disabled>Ronda Siguiente</button>
+      </section>
+    </main>
+
+    <aside class="instrucciones">
+      <article>
+        <h3>Paso 1</h3>
+        <p>Ingresa un número entre 0 y 9.</p>
+      </article>
+      <article>
+        <h3>Paso 2</h3>
+        <p>Haz clic en "¡Adivinar!" para jugar la ronda.</p>
+      </article>
+      <article>
+        <h3>Paso 3</h3>
+        <p>Haz clic en "Ronda Siguiente" para continuar.</p>
+      </article>
+    </aside>
+
+    <script src="./script.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>
